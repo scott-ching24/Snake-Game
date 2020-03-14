@@ -212,7 +212,7 @@ def main_menu(display_width, display_height, game_display, colours):
 
 def paused():
 	large_text = pygame.font.Font(None, 115)
-	text_surface, text_rectangle = text_objects("Paused", large_text)
+	text_surface, text_rectangle = text_object("Paused", large_text)
 	text_rectangle.center = (display_width//2, display_height*2//5)
 	game_display.blit(text_surface, text_rectangle)
 	
